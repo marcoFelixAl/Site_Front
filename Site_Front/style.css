@@ -1,0 +1,163 @@
+header {
+    background-color: #bE5505;
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    /* width do elemento */
+    height: 200px;
+    /* height do elemento */
+    object-fit: cover;
+    object-position: center;
+    /* teste 20% 10% */
+    border: 5px solid #FDA172;
+    border-radius: 30%;
+}
+
+nav {
+    background-color: #ED820E;
+    display: inline-flex;
+    width: 20%;
+}
+
+nav li {
+    display: flex;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+}
+
+nav li a:hover {
+    background-color: #EC9706;
+}
+
+
+main {
+    display: inline-flex;
+    flex-wrap: wrap;
+
+    flex-direction: column;
+    /* Organiza os itens em coluna */
+    position: absolute;
+    width: 70%;
+    /* Adicionar um pouco de espaço para evitar que o conteúdo toque o footer */
+
+
+    /*object-position: center;
+    text-align: center; 
+    vertical-align: middle;
+    line-height: altura do contêiner;
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    justify-content: center;
+
+    */
+}
+
+img {
+    width: 150px;
+}
+
+.tituloFormas {
+    text-align: center;
+    color: #bE5505;
+}
+
+.quadrado {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.retangulo {
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.triangulo {
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid yellow;
+    border-left: 50px solid rgb(66, 76, 66);
+    margin-left: auto;
+    margin-right: auto
+        /* para deixar transparête aparecendo 
+  só o trângulo, muda-se de solid-cor para solid transparente*/
+}
+
+.trianguloDois {
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid transparent;
+    border-left: 50px solid orangered;
+    margin-left: auto;
+    margin-right: auto;
+    /* para deixar transparête aparecendo 
+  só o trângulo, muda-se de solid-cor para solid transparente*/
+}
+
+.circulo {
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.hexagono {
+    width: 80px;
+    height: 45px;
+    background-color: purple;
+    position: relative;
+    margin: 25px auto;
+}
+
+.hexagono:before,
+.hexagono:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+}
+
+.hexagono:before {
+    bottom: 100%;
+    border-bottom: 22px solid purple;
+}
+
+.hexagono:after {
+    top: 100%;
+    width: 0;
+    border-top: 22px solid purple;
+}
+
+
+.footer {
+    background-image: url(OIP\ \(3\).jpg);
+    height: 100px;
+}
+
+.eu {
+    font-size: 30px;
+    margin-left: 5%;
+}
+
+
+.Hobbies {
+    font-size: 20px;
+    margin-left: 5%;
+    padding-bottom: 20px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Depoimento</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="icones/favicon-16x16.png">
+    <script>
+        window.onload = function() {
+            var mainHeight = document.querySelector('main').clientHeight; // Obtém a altura da main
+            var navHeight = document.querySelector('nav').clientHeight; // Obtém a altura da nav
+        
+            if (navHeight > mainHeight) {
+                document.querySelector('main').style.height = navHeight + 'px'; // Define a altura da main igual à altura da nav
+            } else {
+                document.querySelector('nav').style.height = mainHeight + 'px'; // Define a altura da nav igual à altura da main
+            }
+        };
+</script>  
+
+</head>
+<body>
+    <header><img src="logo.jpg" ></header>
+    <nav>
+        <ul>
+          <li ><a href="#">Sobre Mim</a></li>
+          <li><a href="#">Curriculo</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="Depoimento.html">Depoimentos</a></li>
+          <li><a href="projetosPessoais.html">Meus Projetos</a></li>
+
+        </ul>            
+    </nav>
+<main>
+
+<p>Seu nome</p>
+<p>Idade</p>
+<p>Objetivos Pessois</p>
+<p>Hobbies</p>
+
+
+</main>
+ <footer class="footer">
+    <address>endereço qualquer</address>
+</footer>
+</body>
+</html>

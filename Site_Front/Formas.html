@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>formas Geométricas</title>
+    <script src="script.js"></script>
+    <link rel="icon" type="image/png" sizes="16x16" href="icones/favicon-16x16.png">
+</head>
+<body>
+    <header><img src="logo.jpg" ></header>
+    <nav>
+        <ul>
+          <li ><a href="index.html">Menu</a></li>
+          <li><a href="index.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="/aulas/seletores.html">Seletores CSS</a></li>
+          <li><a href="projetosPessoais.html">Projetos Pessoais</a></li>
+          <script>
+            window.onload = function() {
+                var mainHeight = document.querySelector('main').clientHeight; // Obtém a altura da main
+                var navHeight = document.querySelector('nav').clientHeight; // Obtém a altura da nav
+            
+                if (navHeight > mainHeight) {
+                    document.querySelector('main').style.height = navHeight + 'px'; // Define a altura da main igual à altura da nav
+                } else {
+                    document.querySelector('nav').style.height = mainHeight + 'px'; // Define a altura da nav igual à altura da main
+                }
+            };
+    </script>  
+
+        </ul>            
+    </nav>
+<main>
+    <h2 class="tituloFormas">Quadrado</h2>
+    <div class="quadrado"></div>
+    <h2 class="tituloFormas">retângulo</h2>
+    <div class="retangulo"></div>
+    <h2 class="tituloFormas">triângulo</h2>
+    <div class="triangulo"></div>
+    <h2 class="tituloFormas">triângulo Dois</h2>
+    <div class="trianguloDois"></div>
+    <h2 class="tituloFormas">Círculo</h2>
+    <div class="circulo"></div>
+    <h2 class="tituloFormas">Hexágono</h2>
+    <div class="hexagono"></div>
+   
+</main>
+ <footer class="footer">
+    <address>endereço qualquer</address>
+</footer>
+</body>
+</html>
